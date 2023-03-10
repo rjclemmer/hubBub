@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS hubBub_db;
+
+CREATE DATABASE hubBub_db;
