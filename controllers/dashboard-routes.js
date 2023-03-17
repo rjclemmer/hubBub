@@ -22,7 +22,7 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 router.get('/new', withAuth, (req, res) => {
-  res.render('new-post', {
+  res.render('create-post', {
     layout: 'dashboard',
   });
 });
@@ -34,7 +34,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
     if (postData) {
       const post = postData.get({ plain: true });
 
-      res.render('edit-post', {
+      res.render('update-delete', {
         layout: 'dashboard',
         post,
       });
