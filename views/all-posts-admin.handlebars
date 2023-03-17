@@ -1,0 +1,8 @@
+<div class="list-group mb-5">
+        {{#each posts}}
+        <a class="list-group-item d-flex justify-content-between align-items-center" href="/dashboard/edit/{{id}}">
+          <span>{{title}}</span>
+          <span class="badge bg-secondary">{{format_date createdAt}}</span>
+        </a>
+        {{/each}}
+      </div>
