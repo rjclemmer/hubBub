@@ -1,8 +1,16 @@
-<div class="list-group mb-5">
-        {{#each posts}}
-        <a class="list-group-item d-flex justify-content-between align-items-center" href="/dashboard/edit/{{id}}">
-          <span>{{title}}</span>
-          <span class="badge bg-secondary">{{format_date createdAt}}</span>
+<div class="container">
+  <div class="list-group">
+    <div class="row">
+      {{#each posts}}
+      <div class="col-md-4 mb-4">
+        <a class="list-group-item list-group-item-action border border-primary" href="/dashboard/edit/{{id}}">
+          <div class="d-flex justify-content-between">
+            <span>{{title}}</span>
+            <span>{{format_date createdAt}}</span>
+          </div>
         </a>
-        {{/each}}
       </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

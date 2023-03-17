@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <div class="row">
+    {{#each posts}}
+    <div class="col-md-4 mb-4">
+      <div class="card border border-primary">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="/post/{{id}}">{{title}}</a>
+          </h5>
+          <p class="card-text">{{body}}</p>
+          <p class="card-text">
+            <small class="text-muted">
+              Posted by {{User.username}} on {{format_date createdAt}}
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
