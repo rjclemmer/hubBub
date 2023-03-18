@@ -1,6 +1,6 @@
 # hubBub 
 
-hubBub is an app where users can create, update, and delete posts.
+hubBub is an app where users can create, update, and delete posts. Although most everything works - I'm having issues with logging out. 
 
 ## User Story
 
@@ -34,7 +34,7 @@ After the dependencies are installed, create a .ENV file and fill it with your c
 
 ```bash
 
-DB_NAME='tech_blog_db'
+DB_NAME='hubBub_db'
 DB_USER='root'
 DB_PASSWORD='UPDATE YOUR PASSWORD HERE'
 
